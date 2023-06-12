@@ -1,5 +1,11 @@
 ﻿
 using CSharpMonoGame;
-    
-Game game = new();
-game.Run();
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Game game = new();
+        game.Run();
+    }
+}
