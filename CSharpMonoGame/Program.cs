@@ -1,3 +1,5 @@
 ﻿
-using var game = new CSharpMonoGame.Game1();
+using CSharpMonoGame;
+    
+Game game = new();
 game.Run();

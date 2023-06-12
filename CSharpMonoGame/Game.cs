@@ -4,12 +4,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace CSharpMonoGame
 {
-    public class Game1 : Game
+    public class Game : Microsoft.Xna.Framework.Game
     {
-        private GraphicsDeviceManager _graphics;
+        private readonly GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public Game1()
+        public Game()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
