@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -13,7 +11,7 @@ namespace CSharpMonoGame
 
         public Game()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            _graphics = new(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
@@ -27,7 +25,7 @@ namespace CSharpMonoGame
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _spriteBatch = new(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
         }
